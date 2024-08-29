@@ -1,7 +1,16 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+    box-sizing: border-box;
+    overflow: hidden;
+    /* Inclui padding e border no cálculo da largura e altura */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
@@ -16,31 +25,49 @@ body {
     justify-content: center;
 }
 
+
 img.logo-xraw {
     display: block;
-    margin-bottom: 20px; /* Espaçamento abaixo da logo */
+    margin-bottom: 20px;
+    /* Espaçamento abaixo da logo */
+    padding-top: 1em;
+    width: 230px;
 }
 
 h1 {
-    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    line-height: 0.9em;
+    color: #D9D9D9;
     text-transform: uppercase;
     font-family: "Lexend Zetta", sans-serif;
+    font-weight: 800;
+    letter-spacing: -10px;
     text-align: center;
-    font-size: 48px;
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-size: 72px;
+    margin-bottom: 20px;
+    /* Espaçamento abaixo do título */
 }
 
 p {
-    color: #fff;
+    color: #D9D9D9;
+    width: 800px;
+    font-family: "Sora", system-ui;
     text-align: center;
     font-weight: lighter;
     font-size: 24px;
-    margin-bottom: 20px; /* Espaçamento abaixo dos parágrafos */
+    margin-bottom: 20px;
+    /* Espaçamento abaixo dos parágrafos */
 }
 
 a {
+    padding-top: 40px;
     display: block;
-    margin-bottom: 20px; /* Espaçamento abaixo do botão */
+    /* Espaçamento abaixo do botão */
+}
+
+a img {
+    width: 450px;
 }
 
 .circle-bg-gradient {
@@ -49,7 +76,8 @@ a {
     height: 100%;
     top: 0;
     left: 0;
-    z-index: -1; /* Coloca o círculo atrás do conteúdo principal */
+    z-index: -1;
+    /* Coloca o círculo atrás do conteúdo principal */
 }
 
 .circle {
@@ -58,23 +86,119 @@ a {
     background-color: #31A7FF;
     border-radius: 50%;
     position: absolute;
-    bottom: -1450px;
+    bottom: -800px;
     left: 50%;
     transform: translateX(-50%);
     filter: blur(250px);
 }
 
-@media (max-width: 767px) {
+/*INICIO AJUSTE MOBILE*/
+/*INICIO AJUSTE MOBILE*/
+/*INICIO AJUSTE MOBILE*/
+
+@media (max-width: 1366px) {
+
+    img.logo-xraw {
+        display: block;
+        margin-bottom: 0px;
+        /* Espaçamento abaixo da logo */
+        padding-top: 0em;
+        width: 150px;
+    }
+
     h1 {
-        font-size: 36px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+        padding-top: 30px;
+        padding-bottom: 20px;
+        line-height: 0.9em;
+        color: #D9D9D9;
+        text-transform: uppercase;
+        font-family: "Lexend Zetta", sans-serif;
+        font-weight: 800;
+        letter-spacing: -10px;
+        text-align: center;
+        font-size: 48px;
+        margin-bottom: 20px;
+        /* Espaçamento abaixo do título */
+    }
+
+    .box-p {
+        line-height: 1.3em;
+
     }
 
     p {
-        font-size: 18px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+        color: #D9D9D9;
+        width: 600px;
+        font-family: "Sora", system-ui;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 16px;
+        margin-bottom: 15px;
+        /* Espaçamento abaixo dos parágrafos */
+    }
+
+    a {
+        padding-top: 15px;
+        display: block;
+        margin-bottom: 0;
+    }
+
+    a img {
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+        /* Para garantir que o conteúdo fique centralizado verticalmente */
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    img.logo-xraw {
+        display: block;
+        margin-bottom: 20px;
+        /* Espaçamento abaixo da logo */
+        padding-top: 1em;
+        padding-left: 10px;
+        width: 190px;
+    }
+
+    .box-p {
+        margin-left: 2em;
+        margin-right: 2em;
     }
 
     .circle {
         width: 800px;
         height: 600px;
+    }
+
+    a {
+        padding-top: 40px;
+        display: block;
+        /* Espaçamento abaixo do botão */
+    }
+    
+    a img {
+        width: 300px;
     }
 }
