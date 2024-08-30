@@ -123,6 +123,9 @@ body {
     background-color: #011C38;
     overflow: hidden;
     box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
   }
 
   .conteudo {
@@ -131,7 +134,7 @@ body {
     flex-direction: column;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
   }
 
@@ -171,7 +174,7 @@ body {
     font-family: "Sora", system-ui;
     color: #D9D9D9;
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 20px;
     padding-top: 2em;
   }
 
@@ -179,7 +182,7 @@ body {
     font-family: "Sora", system-ui;
     color: #D9D9D9;
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 20px;
     padding-top: 0.5em;
   }
 
