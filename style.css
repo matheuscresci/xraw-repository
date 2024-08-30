@@ -129,14 +129,8 @@ body {
   }
 
   .conteudo {
-    padding-left: 0px;
-    padding-right: 0px;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: -10%;
-
+    padding: unset;
+    margin: auto;
   }
 
   .conteudo-principal img {
