@@ -123,14 +123,13 @@ body {
     background-color: #011C38;
     overflow: hidden;
     box-sizing: border-box;
-
     margin: 0;
     padding: 0;
   }
 
   .conteudo {
     padding: unset;
-    margin: auto;
+    position: fixed;
   }
 
   .conteudo-principal img {
